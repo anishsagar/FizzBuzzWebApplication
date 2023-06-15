@@ -6,7 +6,6 @@ class Program
 {
     static void Main(string[] args)
     {
-        //int[] values = { 1, 2, 5, 15, 23 };
         string[] values = { "1","3","5","","15","A","23"};
         FizzBuzzProcessor processor = new FizzBuzzProcessor();
         string[] results = processor.ProcessArrayValues(values);
