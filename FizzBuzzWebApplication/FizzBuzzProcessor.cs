@@ -9,11 +9,11 @@
             calculator = new FizzBuzzCalculator();
         }
 
-        public string[] ProcessArrayValues(int[] values)
+        public string[] ProcessArrayValues(string[] values)
         {
             List<string> results = new List<string>();
 
-            foreach (int value in values)
+            foreach (string  value in values)
             {
                 string result = calculator.CalculateFizzBuzz(value);
                 results.Add(result);

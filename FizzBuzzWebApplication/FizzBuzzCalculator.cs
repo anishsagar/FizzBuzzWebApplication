@@ -1,28 +1,30 @@
-﻿namespace FizzBuzzWebApplication
+﻿using Microsoft.AspNetCore.Http;
+
+namespace FizzBuzzWebApplication
 {
     public class FizzBuzzCalculator
     {
-        public string CalculateFizzBuzz(int value)
+        public string CalculateFizzBuzz(string value)
         {
             string result = string.Empty;
+            if (!int.TryParse(value, out int num))
+            {
+                
+                result = "Invalid Item";
 
-            if (value % 3 == 0)
+            }
+            if (num != 0)
+            { 
+                if (num % 3 == 0)
             {
                 result += "Fizz";
-                LogDivision(value, 3);
             }
 
-            if (value % 5 == 0)
+            if (num % 5 == 0)
             {
-                result += "Buzz";
-                LogDivision(value, 5);
+                result += "Buzz"; 
             }
-
-            if (string.IsNullOrEmpty(result))
-            {
-                result = "Invalid Item";
             }
-
             return result;
         }
 

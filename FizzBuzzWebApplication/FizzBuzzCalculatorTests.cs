@@ -9,7 +9,7 @@ namespace FizzBuzzWebApplication
         public void CalculateFizzBuzz_InputIsMultipleOf3_ReturnsFizz()
         {
             // Arrange
-            int value = 9;
+            string value = "9";
             FizzBuzzCalculator calculator = new FizzBuzzCalculator();
 
             // Act
@@ -23,7 +23,7 @@ namespace FizzBuzzWebApplication
         public void CalculateFizzBuzz_InputIsMultipleOf5_ReturnsBuzz()
         {
             // Arrange
-            int value = 10;
+            string value = "10";
             FizzBuzzCalculator calculator = new FizzBuzzCalculator();
 
             // Act
