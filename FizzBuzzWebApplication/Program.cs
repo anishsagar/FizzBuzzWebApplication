@@ -6,7 +6,10 @@ class Program
 {
     static void Main(string[] args)
     {
-        string[] values = { "1","3","5","","15","A","23"};
+        Console.WriteLine("Enter a list of comma-separated values:");
+        string input = Console.ReadLine();
+        string[] values = input.Split(',');
+
         FizzBuzzProcessor processor = new FizzBuzzProcessor();
         string[] results = processor.ProcessArrayValues(values);
 
