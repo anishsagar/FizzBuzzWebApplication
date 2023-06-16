@@ -27,11 +27,6 @@ namespace FizzBuzzWebApplication
             }
             return result;
         }
-
-        private void LogDivision(int value, int divisor)
-        {
-            Console.WriteLine($"Divided {value} by {divisor}");
-        }
     }
 
 }
